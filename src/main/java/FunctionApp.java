@@ -23,13 +23,13 @@ public class FunctionApp {
         System.out.printf("%n");
         System.out.println("\u001B[35mALLE FUNKTIONEN MIT LAMDA-AUSDRÜCKEN:");
 
-        System.out.println("\u001B[36m i) Funktion: x² = \u001B[38m");
+        System.out.println("\u001B[36mi) Funktion: x² = \u001B[38m");
         applyAndPrint(0,90, ((x -> x * x)));
 
         // Fakultät als Lambda Ausdruck
         // for Schleife multipliziert vorherigen wert immer mit dem nÄchsten
 
-        System.out.println("\u001B[36m ii) Fakultät: x! = \u001B[38m");
+        System.out.println("\u001B[36mii) Fakultät: x! = \u001B[38m");
         applyAndPrint(0,10, x -> {
             int result = 1;
             for (int i=0;i < x ;i++){
@@ -40,7 +40,7 @@ public class FunctionApp {
         // x^x+1 als Lamda Ausdruck
         // Methode Math.pow für Potenzrechnung
 
-        System.out.println("\u001B[36m iii) Funktion: x^(x+1) = \u001B[38m");
+        System.out.println("\u001B[36miii) Funktion: x^(x+1) = \u001B[38m");
         applyAndPrint(0,10, x -> (int) Math.pow(x,x+1));
 
         // Fibonacci-Folge als Lamda Ausdruck
@@ -48,7 +48,7 @@ public class FunctionApp {
            Werte um eine Position verschoben
         */
 
-        System.out.println("\u001B[36m iiii) Funktion: fib(x) = \u001B[38m");
+        System.out.println("\u001B[36miiii) Funktion: fib(x) = \u001B[38m");
         applyAndPrint(0,10, x -> {
             int result = 0;
             int result2 = 1;
@@ -112,16 +112,16 @@ public class FunctionApp {
         // applyAndPrint aufruf mit den anonymen Klasse
 
         System.out.println("\u001B[35mALLE FUNKTIONEN ALS ANONYME KLASSE:");
-        System.out.println("\u001B[36m Funktion: x² = \u001B[38m");
+        System.out.println("\u001B[36mFunktion: x² = \u001B[38m");
         applyAndPrint(0,10,squareFunction);
 
-        System.out.println("\u001B[36m Funktion: x! = \u001B[38m");
+        System.out.println("\u001B[36mFunktion: x! = \u001B[38m");
         applyAndPrint(0,10,facultyFunction);
 
-        System.out.println("\u001B[36m Funkion: x^(x+1) = \u001B[38m");
+        System.out.println("\u001B[36mFunkion: x^(x+1) = \u001B[38m");
         applyAndPrint(0,10,powerFunction);
 
-        System.out.println("\u001B[36m Funktion: fib(x) = \u001B[38m");
+        System.out.println("\u001B[36mFunktion: fib(x) = \u001B[38m");
         applyAndPrint(0,10,fibonacciFunction);
 
         System.out.printf("%n%n");
@@ -150,9 +150,9 @@ public class FunctionApp {
         //Aufruf der applyAndPrint Methode mit inner und outer class
 
 
-        System.out.println("\u001B[36m Funktion: x! als Innere \u001B[38m");
+        System.out.println("\u001B[36mFunktion: x! als Innere \u001B[38m");
         applyAndPrint(0,10,innerFaculty);
-        System.out.println("\u001B[36m Funktion: x! als Top-Level-Klasse: \u001B[38m");
+        System.out.println("\u001B[36mFunktion: x! als Top-Level-Klasse: \u001B[38m");
         applyAndPrint(0,10,topLevelFaculty);
 
 
@@ -175,7 +175,7 @@ public class FunctionApp {
 
 
         //Aufruf der applyAndPrint Methode mit squareFunction und unseren Predicates
-        System.out.println("\u001B[36m Funktion: x² aber mit geradem x:\u001B[00m");
+        System.out.println("\u001B[36mFunktion: x² aber mit geradem x:\u001B[00m");
         applyAndPrint(0,10,squareFunction2.conditionateInput(even));
 
         // FacultyFunction als Typ AdvancedFunction, um die conditionateInput Methode aufzurufen
@@ -191,9 +191,9 @@ public class FunctionApp {
         };
 
         // Aufruf der applyandPrint Methode aber nur ungerade results werden ausgegeben
-        System.out.println("\u001B[36m Funktion: x! aber mit ungeradem result: \u001B[00m");
+        System.out.println("\u001B[36mFunktion: x! aber mit ungeradem result: \u001B[00m");
         applyAndPrint(0,100,facultyFunction2.conditionateOutput(odd));
-        System.out.printf("%n\u001B[36m Funktion: fib(x) aber mit ungeradem result: \u001B[00m%n");
+        System.out.printf("%n\u001B[36mFunktion: fib(x) aber mit ungeradem result: \u001B[00m%n");
         applyAndPrint(0,10,fibonacciFunction.conditionateOutput(odd));
 
 
