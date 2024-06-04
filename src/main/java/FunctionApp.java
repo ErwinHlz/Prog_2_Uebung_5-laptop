@@ -24,7 +24,7 @@ public class FunctionApp {
         System.out.println("\u001B[35mALLE FUNKTIONEN MIT LAMDA-AUSDRÜCKEN:");
 
         System.out.println("\u001B[36m i) Funktion: x² = \u001B[38m");
-        applyAndPrint(0,100, ((x -> x * x)));
+        applyAndPrint(0,90, ((x -> x * x)));
 
         // Fakultät als Lambda Ausdruck
         // for Schleife multipliziert vorherigen wert immer mit dem nÄchsten
