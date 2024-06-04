@@ -21,7 +21,7 @@ public class FunctionApp {
         // x² als Lamba Ausdruck
 
         System.out.printf("%n");
-        System.out.println("ALLE    FUNKTIONEN MIT LAMDA-AUSDRÜCKEN:");
+        System.out.println("\u001B[35mALLE FUNKTIONEN MIT LAMDA-AUSDRÜCKEN:");
 
         System.out.println("\u001B[36m i) Funktion: x² = \u001B[38m");
         applyAndPrint(0,2, ((x -> x * x)));
@@ -111,7 +111,7 @@ public class FunctionApp {
 
         // applyAndPrint aufruf mit den anonymen Klasse
 
-        System.out.println("ALLE FUNKTIONEN ALS ANONYME KLASSE:");
+        System.out.println("\u001B[35mALLE FUNKTIONEN ALS ANONYME KLASSE:");
         System.out.println("\u001B[36m Funktion: x² = \u001B[38m");
         applyAndPrint(0,10,squareFunction);
 
